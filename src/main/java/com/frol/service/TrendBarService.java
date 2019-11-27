@@ -14,17 +14,10 @@ public class TrendBarService {
 
     private final QuotesStorage quotes;
 
-//    private final TrendBarTaskHandler trendBarTaskHandler;
-
     public void addQuote(Quote quote) {
         log.info("Service add quote to queue");
         quotes.add(quote);
     }
 
-//    @EventListener(ApplicationReadyEvent.class)
-//    public void EventListenerExecute(){
-//        log.info("Application Ready Event is successfully Started");
-//        trendBarTaskHandler.asyncUpdatingTrendbarsByQuotes();
-//    }
 
 }

@@ -15,9 +15,7 @@ public class TrendBarPersistService {
 
     private final TrendBarRepository tbRepository;
 
-    @Async
     public void save(TrendBarTask trendBarTask) {
-
         log.info("Save TrednBar to DB");
         tbRepository.save(trendBarTask.getTrendBar());
     }
