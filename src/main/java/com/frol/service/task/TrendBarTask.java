@@ -89,35 +89,6 @@ public class TrendBarTask {
         return Date.from(ldt.atZone(ZoneOffset.UTC).toInstant());
     }
 
-//    Atomic
-//    public void setHighPrice(BigDecimal newPrice) {
-//
-//        while (true) {
-//            BigDecimal origVal = highPrice.get();
-//            BigDecimal newVal = origVal.max(newPrice);
-//            highPrice.compareAndSet(origVal, newVal);
-//        }
-//    }
-//
-//    public void setLowPrice(BigDecimal newPrice) {
-//
-//        while (true) {
-//            BigDecimal origVal = lowPrice.get();
-//            BigDecimal newVal = origVal.min(newPrice);
-//            lowPrice.compareAndSet(origVal, newVal);
-//        }
-//    }
-//
-//    public static class TrendBarBuilder {
-//        public TrendBarBuilder lowPrice(BigDecimal newPrice) {
-//            this.lowPrice = new AtomicReference<>(newPrice);
-//            return this;
-//        }
-//        public TrendBarBuilder highPrice(BigDecimal newPrice) {
-//            this.highPrice = new AtomicReference<>(newPrice);
-//            return this;
-//        }
-//    }
 
 
 }
